@@ -1,0 +1,26 @@
+*{
+
+    box-sizing: border-box;
+}
+
+.logo{
+    border-radius: 50%;
+
+}
+
+a.barra_menu {
+    display: inline-block;
+    background-color: rgb(58, 57, 57);
+    
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+
+}
+
+.barra_menu button{
+    font-size: 60px;    
+    
+    
+}
+
