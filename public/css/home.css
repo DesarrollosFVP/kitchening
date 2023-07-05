@@ -1,0 +1,122 @@
+/* HEADER */
+
+.home__header{
+    text-align: center;
+}
+
+
+
+.home__header__img--logo{
+    
+    width: 180px;
+    margin: 15px auto 30px;
+    
+
+}
+
+.home__header__img--logo img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid var(--colorGris) 2px;
+}
+
+.home__header__a--bars{
+    /* Las a son Elementos en Línea por lo que no puedo aplicar ancho, alto, margen, etc */
+    /* Para eso utilizo display (lo paso a elemento de Bloque o Inline-bloque)*/
+    /* Con Inline-Bloque puedo manejar ancho y alto pero no márgenes */
+    /* Con Bloque puedo usar la propiedad margen y otras */
+    display:inline-block;
+    background: var(--colorGris);
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+     
+}
+
+.home__header__a--bars i {
+    padding: 10px;
+    font-size: 30px;
+    
+}
+
+.home__header__nav--menu ul li{
+    background: var(--colorGris);
+    margin-bottom: 4px;
+    padding: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.home__header__nav--menu ul li:last-child{
+    margin-bottom: 0;
+}
+
+
+/* MAIN */
+
+.home__main_section--banner{
+    display: none;
+}
+
+
+.home__main_section--products{
+    margin-top: 30px;
+}
+
+.home__main_section--product-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.home__main_section--product-box a{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    
+}
+
+.home__main_section--product-title{
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.home__main_section--product-button {
+    display: inline-block;
+    background-color: grey;
+    padding: 10px;
+    margin: 20px 0 30px;
+
+}
+
+
+.home__main_section--product-sticker{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
+/* FOOTER */
+
+.home__footer__nav--menu ul li{
+    background: var(--colorRojo);
+    margin-bottom: 4px;
+    padding: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+/* Pseudo Elemento */
+/* Modifica sólo el último Elemento de la Clase */
+.home__footer__nav--menu ul li :last-child {
+    margin-bottom: 0px;
+}
