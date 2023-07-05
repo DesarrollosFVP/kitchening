@@ -119,6 +119,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
+    width: 100%;
     
 }
 
@@ -185,9 +186,9 @@
 
     .home__header__nav--menu ul li{
         
-        font-size: 1.2rem;
-        height: 40px;
-        padding: 10px;
+        font-size: 1.02rem;
+        height: 60px;
+        padding: 20px;
         
     }
 
@@ -207,4 +208,38 @@
         margin-right: 0%;
     }
 
+    /* FOOTER */
+
+    .home__footer {
+        background: var(--colorRojo);
+        text-align: center;
+        padding: 50px 0;
+        border-radius: 30px 30px 0 0;  
+
+    }
+
+    .home__footer__nav--menu {
+        display: inline;
+
+    }
+
+
+    .home__footer__nav--menu ul li{
+        display: inline;
+        text-transform: capitalize;
+        padding: 0px 10px;
+        border-right: solid 2px white;
+
+        margin-bottom: 0px;        
+
+
+        font-size: 1.5rem;
+        
+        
+        
+    }
+
+    .home__footer__nav--menu ul li:last-child{
+        border-right: none;
+    }
 }
