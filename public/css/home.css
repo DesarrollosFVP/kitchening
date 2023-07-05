@@ -43,6 +43,7 @@
 
 .home__header__nav--menu ul li{
     background: var(--colorGris);
+    width: 100%;
     margin-bottom: 4px;
     padding: 2px;
     font-size: 1rem;
@@ -71,6 +72,16 @@
     margin-bottom: 30px;
 }
 
+.home__main_section--product-image{
+    width: 100%;
+}
+
+.home__main_section--product-sticker{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
 .home__main_section--product-box a{
     position: absolute;
     top: 45%;
@@ -96,11 +107,7 @@
 }
 
 
-.home__main_section--product-sticker{
-    position: absolute;
-    top: 0;
-    right: 10px;
-}
+
 
 
 /* FOOTER */
@@ -119,4 +126,85 @@
 /* Modifica sólo el último Elemento de la Clase */
 .home__footer__nav--menu ul li :last-child {
     margin-bottom: 0px;
+}
+
+
+@media (min-width: 768px) {
+
+
+    /* HEADER */
+    .home__header__a--bars{
+        display:none;
+         
+    }
+
+    .home__header__nav--menu ul li{
+        width: 15%;
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: 0.9rem;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .home__header__nav--menu ul li:last-child{
+        margin-right: 0;
+    }
+
+
+    /* MAIN */
+
+    .home__main_section--banner{
+        display: block;
+    }
+
+    .home__main_section--banner img{
+        width: 100%;
+    }
+
+    .home__main_section--products{
+        overflow: hidden;
+    }
+
+    .home__main_section--product{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+        
+    }
+
+    .home__main_section--product:nth-child(even){
+        margin-right: 0%;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    /* HEADER */
+
+    .home__header__nav--menu ul li{
+        
+        font-size: 1.2rem;
+        height: 40px;
+        padding: 10px;
+        
+    }
+
+
+    /* MAIN */
+
+    .home__main_section--product{
+        width: 32%;
+                
+    }
+
+    .home__main_section--product:nth-child(even){
+        margin-right: 2%;
+    }
+
+    .home__main_section--product:nth-child(3n){
+        margin-right: 0%;
+    }
+
 }
